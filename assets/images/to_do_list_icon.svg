@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#28A9F3"/>
+      <stop offset="1" stop-color="#1684D8"/>
+    </linearGradient>
+    <linearGradient id="tabPink" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF4D9A"/>
+      <stop offset="1" stop-color="#E51F79"/>
+    </linearGradient>
+    <linearGradient id="tabPurple" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#A84CFF"/>
+      <stop offset="1" stop-color="#7B24D5"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD52F"/>
+      <stop offset="1" stop-color="#FF9E00"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0.8" dy="1.2" stdDeviation="1.2" flood-color="#07569A" flood-opacity=".35"/>
+    </filter>
+  </defs>
+
+  <!-- Rear colored sheets -->
+  <path d="M35.5 8.2h7.1c2.1 0 3.8 1.7 3.8 3.8v30.1c0 2.1-1.7 3.8-3.8 3.8H35.5z"
+        fill="url(#tabPink)"/>
+  <path d="M36.4 11.3h6.2c1.3 0 2.3 1 2.3 2.3v24.1c0 1.3-1 2.3-2.3 2.3h-6.2z"
+        fill="#FF79B2" opacity=".55"/>
+  <path d="M36.5 13.2h6.2c1.9 0 3.5 1.6 3.5 3.5v23.1c0 1.9-1.6 3.5-3.5 3.5h-6.2z"
+        fill="url(#tabPurple)" transform="translate(0 5)"/>
+  <path d="M37.2 20.1h5.4c1.2 0 2.2 1 2.2 2.2v16.5c0 1.2-1 2.2-2.2 2.2h-5.4z"
+        fill="#B26AFF" opacity=".45"/>
+
+  <!-- Main document -->
+  <path d="M9.4 4.3h21.8l8.8 8.8v32.6H9.4c-2.1 0-3.7-1.7-3.7-3.7V8c0-2.1 1.7-3.7 3.7-3.7z"
+        fill="url(#paper)" stroke="#0877C9" stroke-width="1.1" filter="url(#shadow)"/>
+  <path d="M31.2 4.3v6.9c0 1.1.9 1.9 1.9 1.9H40z" fill="#BFEAFF"/>
+  <path d="M31.2 4.3l8.8 8.8h-6.9c-1.1 0-1.9-.9-1.9-1.9z" fill="#DDF4FF"/>
+
+  <!-- Checklist rows -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M11.1 18.1l2.2 2.2 4.2-4.5" stroke="#fff" stroke-width="2.2"/>
+    <path d="M21 17.6h11.5" stroke="#07569B" stroke-width="2.2"/>
+
+    <path d="M11.1 27.1l2.2 2.2 4.2-4.5" stroke="#fff" stroke-width="2.2"/>
+    <path d="M21 26.6h11.5" stroke="#07569B" stroke-width="2.2"/>
+
+    <path d="M11.1 36.1l2.2 2.2 4.2-4.5" stroke="#fff" stroke-width="2.2"/>
+    <path d="M21 35.6h11.5" stroke="#07569B" stroke-width="2.2"/>
+  </g>
+
+  <!-- Left accent rays -->
+  <g fill="url(#accent)" stroke="#F38B00" stroke-width=".35">
+    <rect x="2.5" y="17.1" width="3.1" height="7.1" rx="1.55" transform="rotate(-35 4.05 20.65)"/>
+    <rect x="1.4" y="26.1" width="6.5" height="3.1" rx="1.55"/>
+    <rect x="2.5" y="31.2" width="3.1" height="7.1" rx="1.55" transform="rotate(35 4.05 34.75)"/>
+  </g>
+</svg>
